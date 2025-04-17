@@ -29,8 +29,8 @@ git clone https://github.com/Achilleas05/SmartHome-App.git
 cd SmartHome-App
 python frontend.py  # Single-home mode
 python challenge.py # Multi-home mode
-Requirements:
 
+Requirements:
 Python 3.x
 
 Tkinter (usually pre-installed)
@@ -75,6 +75,7 @@ Copy
 tv = SmartTV()  
 tv.set_channel(500)  # Valid  
 tv.set_channel(1000) # Raises error  
+
 📜 Academic Declaration
 ⚠️ This is my original work for University of Portsmouth coursework (M30299).
 
