@@ -1,89 +1,40 @@
-🏠 SmartHome-App - README 📋
-✨ A Python GUI smart home manager with multi-property support (Tkinter + CSV persistence) ✨
+# 🏠 Smart Home System (Python/Tkinter)
 
-🌟 Features
-🔧 Core Components
-File	           Description
-backend.py 🖥️	  All device & home logic (SmartPlug, SmartTV, SmartSpeaker, SmartHome)
-frontend.py 🎨	Tkinter GUI for single-home control
-challenge.py 🚀	Extended multi-home manager with CSV saving/loading
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Status](https://img.shields.io/badge/Status-Academic%20Project-orange.svg)
 
-Key Functionality:
+## 📖 Project Overview
+A complete smart home management system featuring:
+- **🔌 Device Control**: Smart plugs, TVs, speakers with configurable attributes
+- **🏠 Multi-Home Management**: Manage multiple properties in one interface
+- **💾 Data Persistence**: Save/load home configurations via CSV
+- **🖥️ GUI Interface**: Tkinter-based user interface
 
-🔌 SmartPlug: Adjust wattage (0-150W)
+## ⚖️ Legal Disclaimer
 
-📺 SmartTV: Change channels (1-734)
+### 📜 Ownership & Rights
+- This project was developed as part of academic coursework
+- All code is original work created solely for educational purposes
+- The university retains no ownership rights to this specific implementation
 
-🔊 SmartSpeaker: Switch services (Amazon/Apple/Spotify)
+### 🚫 Restrictions
+- **Academic Integrity**: This code may not be submitted by other students
+- **No Commercial Use**: Not licensed for commercial applications
+- **No AI-Generated Code**: Strictly prohibited per academic policies
 
-➕ Add/remove devices dynamically
+### ✅ Permitted Uses
+- Personal learning and portfolio demonstration
+- Reference for similar academic projects (with proper attribution)
+- Open-source contributions (via forking)
 
-💾 Auto-save homes to homes.csv
 
-🚀 Quick Start
-Clone & run:
 
-bash
-Copy
-git clone https://github.com/Achilleas05/SmartHome-App.git
-cd SmartHome-App
-python frontend.py  # Single-home mode
-python challenge.py # Multi-home mode
 
-Requirements:
-Python 3.x
-
-Tkinter (usually pre-installed)
-
-🖥️ GUI Preview
-Single-Home Mode (frontend.py)
-
-Copy
-[Turn All On] [Turn All Off]  
-📺 TV: On (Channel 42) [Toggle] [Edit] [Delete]  
-🔊 Speaker: Off (Spotify) [Toggle] [Edit] [Delete]  
-🔌 Plug: Off (75W) [Toggle] [Edit] [Delete]  
-[Add New Device]  
-Multi-Home Mode (challenge.py)
-
-Copy
-🏠 Home 1 (3 devices, 2 active) [Manage]  
-🏠 Home 2 (1 device, 0 active) [Manage]  
-[Add New Home] [Save & Exit]  
-📂 File Structure
-Copy
-SmartHome-App/
-├── backend.py       # Device classes + SmartHome logic
-├── frontend.py      # Single-home GUI  
-├── challenge.py     # Multi-home manager + CSV persistence  
-├── homes.csv        # Auto-generated config storage  
-└── README.md
-🛠 Development Notes
-🔍 Code Highlights
-Backend: Strict input validation (e.g., TV channels 1-734 only)
-
-Frontend: Grid layout adapts to device count
-
-Challenge: CSV maintains state between sessions
-
-🧪 Testing
-Run manual tests via GUI or:
-
-python
-Copy
-# Example test in backend.py
-tv = SmartTV()  
-tv.set_channel(500)  # Valid  
-tv.set_channel(1000) # Raises error  
-
-📜 Academic Declaration
-⚠️ This is my original work for University of Portsmouth coursework (M30299).
-
-👨‍💻 100% self-written code
-
-📚 Referenced only Python docs & lecture materials
-
-🤖 No AI code generators used
-
-📬 Contact
-📧 Email: achilleasachilleos0@gmail.com
+## 🛠️ Installation
+```bash
+git clone https://github.com/Achilleas05/smarthome-app.git
+cd smarthome-app
+python3 frontend.py      # Single-home mode
+python3 challenge.py     # Multi-home mode
+```bash
